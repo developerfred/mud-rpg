@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -67,13 +71,13 @@ importers:
         version: 18.15.11
       ds-test:
         specifier: https://github.com/dapphub/ds-test.git#c9ce3f25bde29fc5eb9901842bf02850dfd2d084
-        version: github.com/dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084
+        version: git@github.com+dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084
       ejs:
         specifier: ^3.1.9
         version: 3.1.9
       forge-std:
         specifier: https://github.com/foundry-rs/forge-std.git#b4f121555729b3afb3c5ffccb62ff4b6e2818fd3
-        version: github.com/foundry-rs/forge-std/b4f121555729b3afb3c5ffccb62ff4b6e2818fd3
+        version: git@github.com+foundry-rs/forge-std/b4f121555729b3afb3c5ffccb62ff4b6e2818fd3
       prettier:
         specifier: ^2.6.2
         version: 2.6.2
@@ -814,7 +818,7 @@ packages:
     dependencies:
       long: 5.2.3
       nice-grpc-common: 2.0.2
-      protobufjs: 7.2.3
+      protobufjs: 7.2.4
 
   /@latticexyz/solecs@2.0.0-alpha.1.122:
     resolution: {integrity: sha512-pLtGFzyURZ3sZGCnRxNlY547mRMhFNTo1B2wPMa268YhdKBwTsO5kV6PAGROoXkzNsl0VvlcCFqamkaKY0gFZg==}
@@ -822,10 +826,10 @@ packages:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/providers': 5.7.2
       '@solidstate/contracts': 0.0.52
-      ds-test: github.com/dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084
+      ds-test: git@github.com+dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084
       ethers: 5.7.2
-      memmove: github.com/dk1a/memmove/ffd71cd77b1708574ef46a667b23ca3a5cc9fa27
-      solmate: github.com/transmissions11/solmate/9cf1428245074e39090dceacb0c28b1f684f584c
+      memmove: git@github.com+dk1a/memmove/ffd71cd77b1708574ef46a667b23ca3a5cc9fa27
+      solmate: git@github.com+transmissions11/solmate/9cf1428245074e39090dceacb0c28b1f684f584c
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2866,8 +2870,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /protobufjs@7.2.3:
-    resolution: {integrity: sha512-TtpvOqwB5Gdz/PQmOjgsrGH1nHjAQVCN7JG4A6r1sXRWESL5rNMAiRcBQlCAdKxZcAbstExQePYG8xof/JVRgg==}
+  /protobufjs@7.2.4:
+    resolution: {integrity: sha512-AT+RJgD2sH8phPmCf7OUZR8xGdcJRga4+1cOaXJ64hvcSkVhNcRHOwIxUatPH15+nj59WAGTDv3LSGZPEQbJaQ==}
     engines: {node: '>=12.0.0'}
     requiresBuild: true
     dependencies:
@@ -3644,23 +3648,23 @@ packages:
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
 
-  github.com/dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084:
-    resolution: {tarball: https://codeload.github.com/dapphub/ds-test/tar.gz/c9ce3f25bde29fc5eb9901842bf02850dfd2d084}
+  git@github.com+dapphub/ds-test/c9ce3f25bde29fc5eb9901842bf02850dfd2d084:
+    resolution: {commit: c9ce3f25bde29fc5eb9901842bf02850dfd2d084, repo: git@github.com:dapphub/ds-test.git, type: git}
     name: ds-test
     version: 1.0.0
 
-  github.com/dk1a/memmove/ffd71cd77b1708574ef46a667b23ca3a5cc9fa27:
-    resolution: {tarball: https://codeload.github.com/dk1a/memmove/tar.gz/ffd71cd77b1708574ef46a667b23ca3a5cc9fa27}
+  git@github.com+dk1a/memmove/ffd71cd77b1708574ef46a667b23ca3a5cc9fa27:
+    resolution: {commit: ffd71cd77b1708574ef46a667b23ca3a5cc9fa27, repo: git@github.com:dk1a/memmove.git, type: git}
     name: memmove
     version: 0.1.0
 
-  github.com/foundry-rs/forge-std/b4f121555729b3afb3c5ffccb62ff4b6e2818fd3:
-    resolution: {tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/b4f121555729b3afb3c5ffccb62ff4b6e2818fd3}
+  git@github.com+foundry-rs/forge-std/b4f121555729b3afb3c5ffccb62ff4b6e2818fd3:
+    resolution: {commit: b4f121555729b3afb3c5ffccb62ff4b6e2818fd3, repo: git@github.com:foundry-rs/forge-std.git, type: git}
     name: forge-std
     version: 1.2.0
     dev: true
 
-  github.com/transmissions11/solmate/9cf1428245074e39090dceacb0c28b1f684f584c:
-    resolution: {tarball: https://codeload.github.com/transmissions11/solmate/tar.gz/9cf1428245074e39090dceacb0c28b1f684f584c}
+  git@github.com+transmissions11/solmate/9cf1428245074e39090dceacb0c28b1f684f584c:
+    resolution: {commit: 9cf1428245074e39090dceacb0c28b1f684f584c, repo: git@github.com:transmissions11/solmate.git, type: git}
     name: solmate
     version: 6.5.0
